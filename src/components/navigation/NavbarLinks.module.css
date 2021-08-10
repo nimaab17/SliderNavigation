@@ -1,0 +1,24 @@
+.link{
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px  8px 0 #0005;
+    
+    
+    transition: all 0.3s;
+}
+
+.link:hover{
+    background-color: aliceblue !important;
+    width: 600px;
+}
+/* .Link_title{
+    transform: rotate(90deg);
+} */
