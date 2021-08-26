@@ -12,6 +12,7 @@ function MainNavigation () {
             <div className={classes.navigation}>
                 <div className={classes.navigation__links}>
                     <Navigation links={navbarItems} />
+                    
                 </div>
                 <div className={classes.navigation__carosel}>
                     
