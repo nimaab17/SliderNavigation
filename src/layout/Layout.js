@@ -1,10 +1,19 @@
-// import classes from './Layout.module.css'
+import classes from './Layout.module.css'
 import MainNavigation from './MainNav'
 
 function Layout() {
+ 
+
+
+
     return (
-        <div>
+        <div className={classes.main}>
+         
+          <div className={classes.navigation}>
             <MainNavigation />
+           
+          </div>
+            
         </div>
     );
 }

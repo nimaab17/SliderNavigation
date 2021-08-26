@@ -1,0 +1,12 @@
+.slider{
+    height: 100%;
+}
+
+.slider__item{
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}

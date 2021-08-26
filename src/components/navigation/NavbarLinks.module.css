@@ -1,24 +1,29 @@
 .link{
-    width: 80px;
+    width: 90px;
     height: 100%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 2px  8px 0 #0005;
-    
-    
-    transition: all 0.3s;
+    /* background-image: url('../../img/alfa.png'); */
+    color: #ffff;
+    transition: all 0.8s;
 }
 
 .link:hover{
     background-color: aliceblue !important;
-    width: 600px;
+    width: 700px;
 }
-/* .Link_title{
+.Link_title{
     transform: rotate(90deg);
-} */
+    margin-top: 50px;
+    transition: all .8s;
+}
+.link:hover .Link_title{
+    transform: rotate(0deg);
+}

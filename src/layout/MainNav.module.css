@@ -2,5 +2,27 @@
     width: 100%;
     height: 100vh;
     
+    background-color: #283148;
     direction: ltr;
+    
+}
+.navigation__carosel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.navigation__carosel_cover{
+    width: 100%;
+    height: 100%;
+    background-color: #283148;
+}
+.navigation__links{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    
 }

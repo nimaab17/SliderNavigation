@@ -5,14 +5,12 @@ import classes from './NavbarLinks.module.css'
 function NavbarLinks (props) {
     
     const style = {
-        
-        'backgroundImage': `url(${props.image})`
+       
+        backgroundImage: `url(${props.image})`    
     }
     return (
         <div style={style} className={classes.link}>
-            
-            <h2>{props.number}</h2>
-            <h1 className={classes.Link_title}>{props.title}</h1>
+            <h3 className={classes.Link_title}>{props.title}</h3>
             
         </div>
 

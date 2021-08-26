@@ -1,59 +1,87 @@
 // import { Link } from 'react-router-dom'
+
 import Navigation from '../components/navigation/Navigation';
 import classes from './MainNav.module.css';
+import Carousel from '../components/slider/Carousel';
 
 
 function MainNavigation () {
+    const images =[
+        {
+            url: "/images/slider/1.jpg",
+            title: "test",
+          },
+          {
+            url: "/images/slider/2.jpg",
+            title: "test",
+          },
+          {
+            url: "/images/slider/3.jpg",
+            title: "test",
+          },
+         
+       
+    ]
     const navbarItems = [
         {
             id:0,
-            title: 'Home',
-            image: './img/alfa.png'
+            title: 'Alfa Romeo',
+            image: '/images/alfa.jpg'
         },
         {
             id:1,
-            title: 'Work',
-            image: './img/alpine.png'
+            title: 'Alpine',
+            image: '/images/alpine.jpg'
         },
         {
             id:2,
-            title: 'About',
-            image: './img/aston.png'
+            title: 'Aston Martin',
+            image: '/images/aston.jpg'
         },
         {
             id:3,
-            title: 'Contact',
-            image: './img/benz.png'
+            title: 'Scuderia AlphaTauri',
+            image: '/images/honda.jpg'
         }, {
             id:4,
-            title: 'Contact',
-            image: './img/ferrari.png'
+            title: 'Scuderia Ferrari',
+            image: '/images/ferari.jpg'
         }, {
             id:5,
-            title: 'Contact',
-            image: './img/hass.png'
+            title: 'Haas',
+            image: '/images/hass.jpg'
         }, {
             id:6,
-            title: 'Contact',
-            image: './img/maclaren.png'
+            title: 'McLaren',
+            image: '/images/maclaren.jpg'
         }, {
             id:7,
-            title: 'Contact',
-            image: './img/redbul.png'
+            title: 'Mercedes-AMG Petronas',
+            image: '/images/mercedess.jpg'
         }, {
             id:8,
-            title: 'Contact',
-            image: './img/tauri.png'
+            title: 'Red Bull Racing Honda',
+            image: '/images/redbull.jpg'
         }, {
             id:9,
-            title: 'Contact',
-            image: './img/william.png'
+            title: 'Williams',
+            image: '/images/william.jpg'
         }
     ]
     return (
-        <div className={classes.navigation}>
-            <Navigation links={navbarItems} />
-        </div>
+       <div>
+            <div className={classes.navigation}>
+                <div className={classes.navigation__links}>
+                    <Navigation links={navbarItems} />
+                </div>
+                <div className={classes.navigation__carosel}>
+                    
+                    <Carousel images={images} />
+                </div>
+               
+                
+            </div>
+       </div>
     );
 }
 
