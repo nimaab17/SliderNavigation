@@ -19,7 +19,8 @@
     justify-content: space-evenly;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
+    
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
